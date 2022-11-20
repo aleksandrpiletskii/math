@@ -12,12 +12,12 @@ heading.textContent = `${firstNumber} * ${secondNumber}`;
 
 button.addEventListener("click", function (e) {
   if (Number(input.value) === firstNumber * secondNumber) {
-    alert("Верно, но ты все равно тупой)");
+    alert("Верно, молодец");
     firstNumber = randomIntFromInterval(1, 9);
     secondNumber = randomIntFromInterval(1, 9);
     heading.textContent = `${firstNumber} * ${secondNumber}`;
   } else {
-    alert("Ну ты тупой");
+    alert("Подумай хорошенько");
   }
   input.value = '';
 });
